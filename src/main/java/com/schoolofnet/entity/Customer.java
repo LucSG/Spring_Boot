@@ -9,7 +9,6 @@ import jakarta.persistence.Id;
 @Entity
 
 public class Customer {
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column
