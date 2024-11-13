@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.schoolofnet.entity.Customer;
 import com.schoolofnet.entity.repository.CustomerRepository;
 
+
 @Controller
 
 @RequestMapping(path = "/customers")
@@ -27,11 +28,13 @@ public class CustomerController {
 	
 	public Customer create(@RequestParam("name") String name, @RequestParam("age") Integer age) {
 		Customer customer = new Customer(name,age);
-		
 		repository.save(customer);
 		
 		
 		return customer;
 	}
+	
+	
+	
 
 }

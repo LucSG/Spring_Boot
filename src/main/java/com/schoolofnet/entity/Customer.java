@@ -10,12 +10,12 @@ import jakarta.persistence.Id;
 
 public class Customer {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private Long id;
-	@Column
+	@Column(name = "name")
 	private String name;
-	@Column
+	@Column(name = "age")
 	private Integer age;
 	
 	
